@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <br />
+    <form name="myform" action="">
+        <h1>dropdown calculator</h1>
+        <input type="text" placeholder= "number1" name="num1"><br><br>
+        <input type="text" placeholder="number2" name="num2"><br><br>
+         <select name="choice">
+        <br />
+            <option value="add">Add</option>
+            <option value="sub">Sub</option>
+            <option value="mul">mul</option>
+            <option value="div">Div</option>
+        </select>
+        <br />
+        <button type="button"  onclick="calculate()" >Submit</button>
+        </form>
+        <script>
+            function calculate() 
+            {
+                var num1 = Number(document.myform.num1.value);
+                var num2 = Number(document.myform.num2.value);
+                var ch= document.myform.choice.value;
+
+                if (ch == "add" ) {
+                    var result = parseInt(num1) + paraseInt(num2);
+                
+                } else if (ch == "sub") {
+                    var result = parseInt(num1)- parseInt(num2);
+                } else if (ch == "Mul") {
+                 var result = parseInt(num1) * parseInt(num2);
+                } else if (ch == "div") {
+                    var result = parseInt(num1) / parseInt(num2);
+                
+            }
+        </script>
+        
+    </form>
+</body>
+</html>

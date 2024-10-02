@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myform"   >
+        <input type="password" placeholder="Enter password" name="pass"><br><br>
+        <input type="password" placeholder="Enter confirm password" name="conpass"><br><br>
+
+        <button onclick="validation()">Submit</button>
+    </form>
+
+    <script>
+        function validation()
+        {
+      var pass = document.myform.pass.value;
+      var cpass= document.myform.conpass.value;
+
+      if(pass==cpass)
+      {
+        alert("password match");
+
+      }
+      else
+      {
+        alert("password not match");
+      }
+        }
+    </script>
+</body>
+</html>
